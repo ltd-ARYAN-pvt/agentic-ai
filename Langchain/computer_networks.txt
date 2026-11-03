@@ -1,0 +1,11 @@
+TCP (Transmission Control Protocol) is a connection-oriented
+transport layer protocol. It provides reliable data delivery,
+sequencing, acknowledgements, and retransmission.
+
+UDP (User Datagram Protocol) is a connectionless transport
+layer protocol. It has lower overhead and does not guarantee
+delivery, sequencing, or retransmission.
+
+TCP is commonly used for reliable transfers, while UDP is
+often useful for real-time applications such as online gaming,
+voice calls, and live streaming.

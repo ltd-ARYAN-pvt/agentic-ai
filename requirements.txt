@@ -1,0 +1,33 @@
+# ============================================================
+#  Agentic AI — Python dependencies
+#  Stack: LangChain · LangGraph · MCP · Ollama · ChromaDB
+#  Recommended: Python 3.10 or newer
+#
+#  Install:
+#     python -m venv venv
+#     .\venv\Scripts\Activate.ps1        (Windows PowerShell)
+#     pip install -r requirements.txt
+# ============================================================
+
+# --- LangChain (models, prompts, LCEL, tools, agents) -------
+langchain>=1.0.0                 # create_agent, core agent APIs
+langchain-core>=1.0.0            # prompts, parsers, runnables, @tool, Document
+langchain-ollama>=1.0.0          # ChatOllama + OllamaEmbeddings (local models)
+langchain-text-splitters>=1.0.0  # RecursiveCharacterTextSplitter
+
+# --- RAG: vector database -----------------------------------
+langchain-chroma>=1.0.0          # Chroma vector store integration
+chromadb>=1.0.0                  # local persistent vector DB
+
+# --- LangGraph (stateful workflows, memory, HITL, ToolNode) --
+langgraph>=1.0.0                 # StateGraph, checkpointers, store, ToolNode
+
+# --- MCP (Model Context Protocol) ---------------------------
+fastmcp>=2.0.0                   # build MCP servers with @mcp.tool
+
+# --- Utilities ----------------------------------------------
+pydantic>=2.0.0                  # state schemas & structured output
+python-dotenv>=1.0.0             # load MODEL / EMBED_MODEL from .env
+
+# --- Coming next (uncomment when you connect MCP to LangGraph)
+# langchain-mcp-adapters>=0.1.0  # use MCP tools inside LangChain / LangGraph
